@@ -10,7 +10,7 @@ https://codepen.io/Oliver-Chen/pen/pobLyNO
 
 解答：
 用可以在父層將資料安入state內，然後render進component內，在component內使用陣列方法map()將資料轉變為jsx tag回傳，以我這隻練習來說，我有class nav(父層)和class navItem(子層)，我將SVG的資料放在父層component的state內：
- ── 
+ 
 class nav extends Component {
   state={
     svg_list:[{...},{...},...] //SVG資料
@@ -29,7 +29,7 @@ class nav extends Component {
         );
     }
 }
- ── 
+ 
 然後在子層Class NavItem將資料以props的方式將SVG資料帶入：
 class navItem extends Component {
     render() {
