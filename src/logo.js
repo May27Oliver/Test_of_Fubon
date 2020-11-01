@@ -16,7 +16,7 @@ class logo extends Component {
                         viewBox="0 0 448 512"
                         className="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"
                     >
-                        <g class="fa-group">
+                        <g className="fa-group">
                         <path
                             fill="currentColor"
                             d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"

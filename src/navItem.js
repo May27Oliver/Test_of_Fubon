@@ -2,33 +2,34 @@ import React, { Component } from 'react';
 
 class navItem extends Component {
     render() {
+        const {svg} = this.props;
         return (
             <li className="nav-item">
                 <label className="nav-link">
                     <svg
-                        aria-hidden={this.props.aria_hidden}
-                        focusable={this.props.falsable}
-                        data-prefix={this.props.prefix}
-                        data-icon={this.props.dataIcon}
-                        role={this.props.role}
-                        xmlns={this.props.xmlns}
-                        viewBox={this.props.viewBox}
-                        className={this.props.svg_className}
+                        aria-hidden={svg.aria_hidden}
+                        focusable={svg.falsable}
+                        data-prefix={svg.prefix}
+                        data-icon={svg.dataIcon}
+                        role={svg.role}
+                        xmlns={svg.xmlns}
+                        viewBox={svg.viewBox}
+                        className={svg.svg_className}
                     >
                         <g className="fa-group">
                             <path
-                                fill={this.props.path_fill1}
-                                d={this.props.path_d1}
-                                className={this.props.path_className1}
+                                fill={svg.path_fill1}
+                                d={svg.path_d1}
+                                className={svg.path_className1}
                             ></path>
                             <path
-                                fill={this.props.path_fill2}
-                                d={this.props.path_d2}
-                                className={this.props.className2}
+                                fill={svg.path_fill2}
+                                d={svg.path_d2}
+                                className={svg.className2}
                             ></path>
                         </g>
                     </svg>
-                    <span className="link-text">{this.props.link_text}</span>
+                    <span className="link-text">{svg.link_text}</span>
                 </label>
             </li>
         );
