@@ -1,31 +1,34 @@
-這個Repo是我在學習React Component時的JSX練習，我嘗試著以JSX Component的方式實作Youtube Fireship頻道內Navbar的範例（連結如下）：
-https://www.youtube.com/watch?v=biOMz4puGt8&t=84s&ab_channel=Fireship
-
-Codepen實作的連結在此：
-https://codepen.io/Oliver-Chen/pen/pobLyNO
-
-過程中遇到如下問題， 嘗試著進行解決：
-
-1.NavBar中有很多小的svg ICON，關於SVG的屬性我都藉由props的方式來把值傳進去，於是引入component時每個Component標籤變得很冗長，這時忽然想到解構賦值的方法，想請問props能否藉由解構賦值的方式傳進Component標籤呢？
-
-解答：
-用可以在父層將資料安入state內，然後render進component內，在component內使用陣列方法map()將資料轉變為jsx tag回傳，以我這隻練習來說，我有class nav(父層)和class navItem(子層)，我將SVG的資料放在父層component的state內：
-
-{this.state.svg_list.map((svg,key)=>(<NavItem key={key} svg={svg}/>))}  
-//此處我將state內的svg_list進行map()處理，回傳<NavItem/>標籤，map()在此處的功能相當於Vue.js的v-for，Angular的NgRepeat，可以逐列地產生陣列資列於HTML上。  
-               
+Dear韋齊,
  
-然後在子層Class NavItem將資料以props的方式將SVG資料帶入：  
-  
- const {svg} = this.props;//在render函式內以解構賦值的方式將this.props內的svg參數帶進{svg}變數內。  
-  
-<svg  
-    aria-hidden={svg.aria_hidden}  
-    focusable={svg.falsable}  
-    data-prefix={svg.prefix}  
-    data-icon={svg.dataIcon}  
-    role={svg.role}  
-    xmlns={svg.xmlns}  
-    viewBox={svg.viewBox}  
-    className={svg.svg_className}  
->
+
+謝謝您從CakeResume投遞我們職缺，為理解您的前端切版能力，我們設計了一個小題目請您於面試前進行作答，希望您於12/17前交付。
+
+ 
+
+題目說明：
+
+l   題目僅包含第2頁的「變更流程頁」：往下滑的說明頁，依序把說明文字及步驟圖檔放上
+
+l   zip檔提供所需的Icon及步驟圖檔
+
+l   請依web及 mobile 版面示意圖完成RWD切版
+
+l   圖片、文字尺寸依照XD檔所列尺寸
+
+Web: https://xd.adobe.com/view/311af513-eded-45bf-98e5-97b7ad14afb0-6449/
+
+Mobile: https://xd.adobe.com/view/2199461d-bb54-45d6-9eb1-e3d5e46a1443-74ca/
+
+ 
+
+功能說明：
+
+l   上方header須作浮動 (捲動時，固定在上方)
+
+l   需符合跨瀏覽器、跨平台
+
+l   在捲動超過200px 時，右下角出現『goTop』回頂按鈕
+
+ 
+
+如對題目有任何疑問，歡迎隨時聯絡

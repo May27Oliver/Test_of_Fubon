@@ -1,10 +1,5 @@
 import React from "react";
 import ReactDOM from 'react-dom';
-import './style.css'
-import Wrap from './wrap'
+import App from './component/App'
 
-ReactDOM.render(
-    <div className="index-box">
-        <Wrap/>
-    </div>
-,document.getElementById("root"));
+ReactDOM.render(<App/>,document.getElementById("root"));
