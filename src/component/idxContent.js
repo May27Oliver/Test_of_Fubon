@@ -21,6 +21,12 @@ const Wrap = styled.div`
     justify-content:space-between;
     align-items:center;
     padding:${props=>props.phone?'65px':'90px'} 0 ${props=>props.phone?'0px':'28px'} 0;
+    @media (max-width: 768px) {
+        width:90%;
+    }
+    @media (max-width: 500px) {
+        width:100%;
+    }
 `
 const CardBox = styled.div`
     width:100%;
@@ -37,7 +43,8 @@ const IdxWords =  styled.div`
 `
 const IdxImg = styled.img`
     display:block;
-    max-width:${props=>props.phone?'73.671%':'67.5%'};
+    max-width: 100%;
+    height:auto;
     flex:${props=>props.phone?'0 0 73.671%':'0 0 67.5%'};
     margin:${props=>props.phone?'auto':'none'};
     box-shadow: 0px 3px 6px #00000029;
@@ -129,6 +136,12 @@ const Seq = styled.span`
     }
 `
 
+const IdxImgBox = styled.div`
+    flex:${props=> props.phone?'0 0 73.671%':'0 0 67.5%'}; 
+    width:${props=> props.phone? '73.671%':'67.5%'};
+    margin:auto;
+`
+
 class idxContent extends Component {
     convertIcon = (array,fn,no) =>{
         if(no){
@@ -212,7 +225,9 @@ class idxContent extends Component {
                                             return <CardContent key={content.text} phone={isMobile}>{content.text}</CardContent>
                                     })}
                             </IdxWords>
-                            <IdxImg src={isMobile?phone_img[`mobile${key+1}.png`]:images[`web${key+1}.png`]} width="auto" height="auto" alt="WebIdx" phone={isMobile}></IdxImg>
+                            <IdxImgBox phone={isMobile}>
+                                <IdxImg src={isMobile?phone_img[`mobile${key+1}.png`]:images[`web${key+1}.png`]} width="auto" height="auto" alt="WebIdx" phone={isMobile}></IdxImg>
+                            </IdxImgBox>
                         </CardBox> 
                     )
                 )}
