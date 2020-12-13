@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "0.1.0",
   "private": true,
-  "homepages": "https://may27oliver.github.io/Test_of_Fubon/",
+  "homepage": "https://may27oliver.github.io/test_of_fubon/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
