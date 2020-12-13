@@ -21,7 +21,7 @@ const Wrap = styled.div`
     justify-content:space-between;
     align-items:center;
     padding:${props=>props.phone?'65px':'90px'} 0 ${props=>props.phone?'0px':'28px'} 0;
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
         width:90%;
     }
     @media (max-width: 500px) {
