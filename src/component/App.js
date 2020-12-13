@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Header from './header';
-import IdxContent from './idxContent'
-import '../style/style.css'
+import IdxContent from './idxContent';
+import Footer from './footer';
+import '../style/style.css';
+
 
 class App extends Component {
     render() {
@@ -9,6 +11,7 @@ class App extends Component {
             <div>
                 <Header></Header>
                 <IdxContent></IdxContent>
+                <Footer></Footer>
             </div>
         );
     }

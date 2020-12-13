@@ -8,6 +8,7 @@ const HeaderBox = styled.div`
     height:84px;
     background:#fff;
     position:fixed;
+    z-index:100;
     top:0;
     left:0;
 `
@@ -26,7 +27,10 @@ const HeaderLine = styled.div`
     opacity:1;
 `
 
-const LogoImg = styled.img`
+const LogoImg = styled.div`
+    width:240px;
+    height:44px;
+    background:url(${props=>props.src}) #fff no-repeat;
     vertical-align: middle; 
 `
 const BackHome = styled.div`

@@ -5,11 +5,12 @@
             "path":"../images/instructions/web/web01.png",
             "width":"810",
             "height":"455.88",
-            "step_desc":"步驟1：",
+            "step_desc":"步驟 1：",
             "step_content":[
                 {
-                    "icon_no":"0",
-                    "text":"由【富邦人壽官網】，點選『保戶會員專區』登入。"
+                    "icon_no":false,
+                    "text":"由【富邦人壽官網】，點選『保戶會員專區』登入。",
+                    "text_no":"1-1"
                 }
             ],
             "bottom_line":false
@@ -28,15 +29,17 @@
             "path":"../images/instructions/web/web03.png",
             "width":"810",
             "height":"788",
-            "step_desc":"步驟2：",
+            "step_desc":"步驟 2：",
             "step_content":[
                 {
                     "icon_no":false,
-                    "text":"點選『線上交易』"
+                    "text":"點選『線上交易』",
+                    "text_no":"2-1"
                 },
                 {
                     "icon_no":false,
-                    "text":"★保護需先申請成為交易會員方可於網路 辦理變更。"
+                    "text":"★保護需先申請成為交易會員方可於網路 辦理變更。",
+                    "text_no":"2-2"
                 }
             ],
             "bottom_line":true
@@ -46,11 +49,12 @@
             "path":"../images/instructions/web/web04.png",
             "width":"810",
             "height":"455.88",
-            "step_desc":"步驟3：",
+            "step_desc":"步驟 3：",
             "step_content":[
                 {
                     "icon_no":false,
-                    "text":"點選後進入『多張保單地址/電話/E-mail變更』作業。"
+                    "text":"點選後進入『多張保單地址/電話/E-mail變更』作業。",
+                    "text_no":"3-1"
                 }
             ],
             "bottom_line":true
@@ -60,131 +64,155 @@
             "path":"../images/instructions/web/web05.png",
             "width":"810",
             "height":"456",
-            "step_desc":"步驟4：",
+            "step_desc":"步驟 4：",
             "step_content":[
                 {
                     "icon_no":"e",
-                    "text":"確認顯示的行動電話及電子信箱是否為最新資料，若需修改請點選{icon}修改。"
+                    "text":"確認顯示的行動電話及電子信箱是否為最新資料，若需修改請點選{icon}修改。",
+                    "text_no":"4-1"
                 }
             ],
-            "bottom_line":false
+            "bottom_line":true
         },
         {
             "title":"Web06.png",
             "path":"../images/instructions/web/web06.png",
             "width":"810",
             "height":"753.07",
-            "step_desc":"步驟5：",
+            "step_desc":"步驟 5：",
             "step_content":[
                 {
                     "icon_no":"e",
-                    "text":"請點選{icon}即可輸入欲變更之內容。"
+                    "text":"請點選{icon}即可輸入欲變更之內容。",
+                    "text_no":"5-1"
                 }
             ],
-            "bottom_line":false
+            "bottom_line":true
         },
         {
             "title":"Web07.png",
             "path":"../images/instructions/web/web07.png",
             "width":"810",
             "height":"679",
-            "step_desc":"步驟6：",
+            "step_desc":"步驟 6：",
             "step_content":[
                 {
                     "icon_no":false,
                     "no":1,
-                    "text":"{no}確認變更內容。"
+                    "no_seq":"6-1-1",
+                    "text":"{no}確認變更內容。",
+                    "text_no":"6-1"
                 },
                 {
                     "icon_no":"d",
                     "no":2,
-                    "text":"{no}點選{icon}，即可刪除此項目"
+                    "no_seq":"6-1-2",
+                    "text":"{no}點選{icon}，即可刪除此項目",
+                    "text_no":"6-2"
                 },
                 {
                     "icon_no":"e",
                     "no":3,
-                    "text":"{no}點選{icon}，可回此變更項目輸入修改變更內容"
+                    "no_seq":"6-1-3",
+                    "text":"{no}點選{icon}，可回此變更項目輸入修改變更內容",
+                    "text_no":"6-3"
                 }
             ],
-            "bottom_line":false
+            "bottom_line":true
         },
         {
             "title":"Web08.png",
             "path":"../images/instructions/web/web08.png",
             "width":"810",
             "height":"455.88",
-            "step_desc":"步驟7：",
+            "step_desc":"步驟 7：",
             "step_content":[
                 {
                     "icon_no":false,
-                    "text":"請審閱重要提醒，確認無誤後請勾選□我已了解並同意後，點選確認進入下一步。"
+                    "text":"請審閱重要提醒，確認無誤後請勾選□我已了解並同意後，點選確認進入下一步。",
+                    "text_no":"7-1"
                 }
                 
             ],
-            "bottom_line":false
+            "bottom_line":true
         },
         {
             "title":"Web09.png",
             "path":"../images/instructions/web/web09.png",
             "width":"810",
             "height":"455.88",
-            "step_desc":"步驟8：",
+            "step_desc":"步驟 8：",
             "step_content":[
                 {
                     "icon_no":false,
-                    "text":"確認本次辦理變更資料，是否傳送至其他保險公司申辦相同變更項目。"
+                    "text":"確認本次辦理變更資料，是否傳送至其他保險公司申辦相同變更項目。",
+                    "text_no":"8-1"
                 }
             ],
-            "bottom_line":false
+            "bottom_line":true
         },
         {
             "title":"Web10.png",
             "path":"../images/instructions/web/web10.png",
             "width":"810",
             "height":"455.88",
-            "step_desc":"步驟9：",
+            "step_desc":"步驟 9：",
             "step_content":[
                 {
                     "icon_no":false,
-                    "text":"如同意傳送至其他保險公司，請選擇欲傳送之保險公司（可複選）。"
+                    "text":"如同意傳送至其他保險公司，請選擇欲傳送之保險公司（可複選）。",
+                    "text_no":"9-1"
                 },
                 {
                     "icon_no":false,
-                    "text":"★僅提供有加入試辦之保險公司，請勾選有該公司保單之保險公司。"
+                    "text":"★僅提供有加入試辦之保險公司，請勾選有該公司保單之保險公司。",
+                    "text_no":"9-2"
                 }
             ],
-            "bottom_line":false
+            "bottom_line":true
         },
         {
             "title":"Web11.png",
             "path":"../images/instructions/web/web11.png",
             "width":"810",
             "height":"455.88",
-            "step_desc":"步驟10：",
+            "step_desc":"步驟 10：",
             "step_content":[
-                ""
-            ],
-            "bottom_line":false
+                {
+                    "icon_no":false,
+                    "text":"請審閱保全申請轉送暨個人資料告知事項，審閱完成後，請點選□本人以審閱蒐集、處理及利用個人資料告知事項，如取消轉送，請點選『不同意傳送』，可回至確認是否同意轉送頁重新選擇。",
+                    "text_no":"10-1"
+                }
+            ],  
+            "bottom_line":true
         },
         {
             "title":"Web12.png",
             "path":"../images/instructions/web/web12.png",
             "width":"810",
             "height":"455.88",
-            "step_desc":"步驟11：",
+            "step_desc":"步驟 11：",
             "step_content":[
-                ""
+                {
+                    "icon_no":false,
+                    "text":"輸入動態密碼，未收到動態密碼，可點選重新發送動態密碼。",
+                    "text_no":"11-1"
+                }
             ],
-            "bottom_line":false
+            "bottom_line":true
         },
         {
             "title":"Web13.png",
             "path":"../images/instructions/web/web13.png",
             "width":"810",
             "height":"455.88",
-            "step_desc":"步驟12：",
+            "step_desc":"步驟 12：",
             "step_content":[
-                ""
+                {
+                    "icon_no":false,
+                    "text":"委託受理完成。可點選『列印內容』，產生出加密之PDF檔，密碼為要保人身分證字號，第一個英文字母大寫。",
+                    "text_no":"12-1"
+                }
             ],
             "bottom_line":false
         }
