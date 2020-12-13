@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const FooterBox = styled.div`
+    display:${props=>props.phone?'none':'block'};
     width:100%;
     height:87px;
     background:transparent linear-gradient(90deg, #00829B 0%, #009583 100%);
@@ -26,8 +27,10 @@ const FoInfo = styled.label`
 
 class footer extends Component {
     render() {
+        const isMobile = window.screen.width < 500;
+
         return (
-            <FooterBox>
+            <FooterBox phone={isMobile}>
                 <Wrap>
                     <FoInfo>版權所有 富邦人壽</FoInfo>
                     <FoInfo>最佳瀏覽狀態請使用:Chrome77,Safari 13,Firefox69版本以上</FoInfo>

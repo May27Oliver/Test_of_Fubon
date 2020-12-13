@@ -1,4 +1,8 @@
 {
+    "web_title":{
+        "bottom_line":false,
+        "title":"變更流程"
+    },
     "pic_info":[
         {
             "title":"Web01.png",
@@ -100,21 +104,21 @@
                     "icon_no":false,
                     "no":1,
                     "no_seq":"6-1-1",
-                    "text":"{no}確認變更內容。",
+                    "text":"{no}請確認變更內容是否正確",
                     "text_no":"6-1"
                 },
                 {
                     "icon_no":"d",
                     "no":2,
                     "no_seq":"6-1-2",
-                    "text":"{no}點選{icon}，即可刪除此項目",
+                    "text":"{no}若欲放棄申請，可點選{icon}",
                     "text_no":"6-2"
                 },
                 {
                     "icon_no":"e",
                     "no":3,
                     "no_seq":"6-1-3",
-                    "text":"{no}點選{icon}，可回此變更項目輸入修改變更內容",
+                    "text":"{no}若欲修改該項變更輸入內容，可點選{icon}",
                     "text_no":"6-3"
                 }
             ],
@@ -206,6 +210,228 @@
             "path":"../images/instructions/web/web13.png",
             "width":"810",
             "height":"455.88",
+            "step_desc":"步驟 12：",
+            "step_content":[
+                {
+                    "icon_no":false,
+                    "text":"委託受理完成。可點選『列印內容』，產生出加密之PDF檔，密碼為要保人身分證字號，第一個英文字母大寫。",
+                    "text_no":"12-1"
+                }
+            ],
+            "bottom_line":false
+        }
+    ],
+    "phone_title":{
+        "bottom_line":true,
+        "title":"多張保單地址 / 電話 / E-mail變更"
+    },
+    "phone_pic":[
+        {
+            "title":"mobile01.png",
+            "path":"../images/instructions/mobile/mobile1.png",
+            "width":"305",
+            "height":"542.22",
+            "step_desc":"步驟 1：",
+            "step_content":[
+                {
+                    "icon_no":false,
+                    "text":"由【手機e方便】，點選『保戶會員專區』登入。",
+                    "text_no":"1-1"
+                }
+            ],
+            "bottom_line":false
+        },
+        {
+            "title":"mobile2.png",
+            "path":"../images/instructions/mobile/mobile2.png",
+            "width":"305",
+            "height":"542.22",
+            "step_desc":"",
+            "step_content":[],
+            "bottom_line":true
+        },
+        {
+            "title":"mobile3.png",
+            "path":"../images/instructions/mobile/mobile3.png",
+            "width":"305",
+            "height":"542.22",
+            "step_desc":"步驟 2：",
+            "step_content":[
+                {
+                    "icon_no":false,
+                    "text":"點選『線上交易』",
+                    "text_no":"2-1"
+                },
+                {
+                    "icon_no":false,
+                    "text":"★保護需先申請成為交易會員方可於網路 辦理變更。",
+                    "text_no":"2-2"
+                }
+            ],
+            "bottom_line":true
+        },
+        {
+            "title":"mobile4.png",
+            "path":"../images/instructions/mobile/mobile4.png",
+            "width":"305",
+            "height":"542",
+            "step_desc":"步驟 3：",
+            "step_content":[
+                {
+                    "icon_no":false,
+                    "text":"點選後進入『多張保單地址/電話/E-mail變更』作業。",
+                    "text_no":"3-1"
+                }
+            ],
+            "bottom_line":true
+        },
+        {
+            "title":"mobile05.png",
+            "path":"../images/instructions/mobile/mobile5.png",
+            "width":"305",
+            "height":"543",
+            "step_desc":"步驟 4：",
+            "step_content":[
+                {
+                    "icon_no":"e",
+                    "text":"確認顯示的行動電話及電子信箱是否為最新資料，若需修改請點選{icon}修改。",
+                    "text_no":"4-1"
+                }
+            ],
+            "bottom_line":true
+        },
+        {
+            "title":"mobile06.png",
+            "path":"../images/instructions/mobile/mobile6.png",
+            "width":"305",
+            "height":"543",
+            "step_desc":"步驟 5：",
+            "step_content":[
+                {
+                    "icon_no":"e",
+                    "text":"請點選{icon}即可輸入欲變更之內容。",
+                    "text_no":"5-1"
+                }
+            ],
+            "bottom_line":true
+        },
+        {
+            "title":"mobile07.png",
+            "path":"../images/instructions/mobile/mobile7.png",
+            "width":"305",
+            "height":"543",
+            "step_desc":"步驟 6：",
+            "step_content":[
+                {
+                    "icon_no":false,
+                    "no":1,
+                    "no_seq":"6-1-1",
+                    "text":"{no}確認變更內容。",
+                    "text_no":"6-1"
+                },
+                {
+                    "icon_no":"d",
+                    "no":2,
+                    "no_seq":"6-1-2",
+                    "text":"{no}點選{icon}，即可刪除此項目",
+                    "text_no":"6-2"
+                },
+                {
+                    "icon_no":"e",
+                    "no":3,
+                    "no_seq":"6-1-3",
+                    "text":"{no}點選{icon}，可回此變更項目輸入修改變更內容",
+                    "text_no":"6-3"
+                }
+            ],
+            "bottom_line":true
+        },
+        {
+            "title":"mobile08.png",
+            "path":"../images/instructions/mobile/mobile8.png",
+            "width":"305",
+            "height":"543",
+            "step_desc":"步驟 7：",
+            "step_content":[
+                {
+                    "icon_no":false,
+                    "text":"請審閱重要提醒，確認無誤後請勾選□我已了解並同意後，點選確認進入下一步。",
+                    "text_no":"7-1"
+                }
+                
+            ],
+            "bottom_line":true
+        },
+        {
+            "title":"mobile09.png",
+            "path":"../images/instructions/mobile/mobile9.png",
+            "width":"305",
+            "height":"543",
+            "step_desc":"步驟 8：",
+            "step_content":[
+                {
+                    "icon_no":false,
+                    "text":"確認本次辦理變更資料，是否傳送至其他保險公司申辦相同變更項目。",
+                    "text_no":"8-1"
+                }
+            ],
+            "bottom_line":true
+        },
+        {
+            "title":"mobile10.png",
+            "path":"../images/instructions/mobile/mobile10.png",
+            "width":"305",
+            "height":"543",
+            "step_desc":"步驟 9：",
+            "step_content":[
+                {
+                    "icon_no":false,
+                    "text":"如同意傳送至其他保險公司，請選擇欲傳送之保險公司（可複選）。",
+                    "text_no":"9-1"
+                },
+                {
+                    "icon_no":false,
+                    "text":"★僅提供有加入試辦之保險公司，請勾選有該公司保單之保險公司。",
+                    "text_no":"9-2"
+                }
+            ],
+            "bottom_line":true
+        },
+        {
+            "title":"mobile11.png",
+            "path":"../images/instructions/mobile/mobile11.png",
+            "width":"305",
+            "height":"543",
+            "step_desc":"步驟 10：",
+            "step_content":[
+                {
+                    "icon_no":false,
+                    "text":"請審閱保全申請轉送暨個人資料告知事項，審閱完成後，請點選□本人以審閱蒐集、處理及利用個人資料告知事項，如取消轉送，請點選『不同意傳送』，可回至確認是否同意轉送頁重新選擇。",
+                    "text_no":"10-1"
+                }
+            ],  
+            "bottom_line":true
+        },
+        {
+            "title":"mobile12.png",
+            "path":"../images/instructions/mobile/mobile12.png",
+            "width":"305",
+            "height":"543",
+            "step_desc":"步驟 11：",
+            "step_content":[
+                {
+                    "icon_no":false,
+                    "text":"輸入動態密碼，未收到動態密碼，可點選重新發送動態密碼。",
+                    "text_no":"11-1"
+                }
+            ],
+            "bottom_line":true
+        },
+        {
+            "title":"mobile13.png",
+            "path":"../images/instructions/mobile/mobile13.png",
+            "width":"305",
+            "height":"543",
             "step_desc":"步驟 12：",
             "step_content":[
                 {

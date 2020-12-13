@@ -5,19 +5,21 @@ import home from '../images/btn_home.svg';
 
 const HeaderBox = styled.div`
     width:100%;
-    height:84px;
+    height:${props=>props.phone?'62px':'84px'};
     background:#fff;
+    box-shadow:${props=>props.phone?"0px 3px 6px #0000005D":"none"};
     position:fixed;
     z-index:100;
     top:0;
     left:0;
 `
 const Wrap = styled.div`
-    width:62.5%;
+    position:${props=>props.phone?'relative':'static'};
+    width:${props=>props.phone?'100%':'62.5%'};
     height:calc( 100% - 8px);
     margin:auto;
     display:flex;
-    justify-content:space-between;
+    justify-content:${props=>props.phone?'center':'space-between'};
     align-items:center;
 `
 const HeaderLine = styled.div`
@@ -28,16 +30,20 @@ const HeaderLine = styled.div`
 `
 
 const LogoImg = styled.div`
-    width:240px;
-    height:44px;
+    width:${props=>props.phone?'128.68px':'240px'};
+    height:${props=>props.phone?'27.45px':'44px'};
     background:url(${props=>props.src}) #fff no-repeat;
     vertical-align: middle; 
 `
 const BackHome = styled.div`
+    position:${props=>props.phone?'absolute':'static'};
+    top:16px;
+    right:23.14px;
     display:flex;
     align-items:center;
 `
 const BackHomePage = styled.span`
+    display:${props=>props.phone?'none':'inline-block'};
     margin-left:5px;
     text-align: left;
     font-size:16px;
@@ -50,14 +56,16 @@ const BackHomePage = styled.span`
 
 class header extends Component {
     render() {
+        const isMobile = window.screen.width < 500;
+
         return (
-            <HeaderBox>
+            <HeaderBox phone={isMobile}>
                 <HeaderLine></HeaderLine>
-                <Wrap>
-                    <LogoImg src={logo} width="240" height="44" alt='logo'></LogoImg>
-                    <BackHome>
+                <Wrap phone={isMobile}>
+                    <LogoImg src={logo} phone={isMobile} alt='logo'></LogoImg>
+                    <BackHome phone={isMobile}>
                         <img src={home} width="24.86" height="24.86" alt="home"/>
-                        <BackHomePage>回首頁</BackHomePage>
+                        <BackHomePage phone={isMobile}>回首頁</BackHomePage>
                     </BackHome>
                 </Wrap>
             </HeaderBox>

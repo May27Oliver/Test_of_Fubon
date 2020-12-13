@@ -9,33 +9,37 @@ function importAllPic(r) {
     return images;
 }
 const images = importAllPic(require.context('../images/instructions/web', true, /^\.\/.*\.png$/));
+const phone_img =  importAllPic(require.context('../images/instructions/mobile', true, /^\.\/.*\.png$/));
 const icons = importAllPic(require.context('../images', true, /^\.\/.*\.svg$/));
 
 const Wrap = styled.div`
-    width:62.5%;
+    width:${props=>props.phone?'100%':'62.5%'};
     height:calc( 100% - 8px);
     margin:auto;
     display:flex;
     flex-direction:column;
     justify-content:space-between;
     align-items:center;
-    padding:90px 0 28px 0;
+    padding:${props=>props.phone?'65px':'90px'} 0 ${props=>props.phone?'0px':'28px'} 0;
 `
 const CardBox = styled.div`
     width:100%;
     display:flex;
+    flex-direction:${props=>props.phone?'column':'row'};
     padding:25px 0;
     background:#fff;
     border-bottom:1px ${props=>props.bottomLine} #D5D5D5;
     border-width: 2px;
 `
 const IdxWords =  styled.div`
+    margin-bottom:${props=>props.phone?'30px':'0'};
     flex:0 0 29.4%;
 `
 const IdxImg = styled.img`
     display:block;
-    max-width:67.5%;
-    flex:0 0 67.5%;
+    max-width:${props=>props.phone?'73.671%':'67.5%'};
+    flex:${props=>props.phone?'0 0 73.671%':'0 0 67.5%'};
+    margin:${props=>props.phone?'auto':'none'};
     box-shadow: 0px 3px 6px #00000029;
     opacity: 1;
 `
@@ -44,14 +48,16 @@ const MainTitle = styled.h3`
     position:relative;
     z-index:1;
     width:100%;
-    font-family:'Source Sans Pro';
-    font-weight:normal;
-    font-size:27px;
+    font-family:${props=>props.bottomLine?'':'Source Sans Pro'};
+    font-weight:${props=>props.bottomLine?'bold':'normal'};
+    font-size:${props=>props.bottomLine?'24px':'27px'};
     background:#fff;
     color:#00829B;
     line-height:38px;
     box-sizing:border-box;
     padding:9px 0 0 29.93px;
+    border-bottom:${props=>props.bottomLine?'2px dashed #D5D5D5':'none'};
+    padding-bottom:${props=>props.bottomLine?'11.2px':'none'};
     &:before {
         content:"";
         display:block;
@@ -60,7 +66,7 @@ const MainTitle = styled.h3`
         background:#00829B;
         position:absolute;
         z-index:1;
-        top:16px;
+        top:${props=>props.bottomLine?'15px':'16px'};
         left:15px;
     }
 
@@ -100,7 +106,7 @@ const CardContent = styled.div`
 const IconImg = styled.img`
     position:relative;
     top:3px;
-    diplay:inline-block;
+    display:inline-block;
     width:22.68px;
     line-height:22.15px
 `
@@ -188,21 +194,25 @@ class idxContent extends Component {
         }
     }
     render() {
-        const cards = Card.pic_info; 
+        const isMobile = window.screen.width < 500;
+        console.log(Card);
+        const cards =isMobile ? Card.phone_pic : Card.pic_info; 
+        const title = isMobile ? Card.phone_title : Card.web_title;
+        
         return (
-            <Wrap>
-                <MainTitle>變更流程</MainTitle>
+            <Wrap phone={isMobile} >
+                <MainTitle phone={isMobile} bottomLine={title.bottom_line}>{title.title}</MainTitle>
                 {cards.map((info,key)=>
                     (
-                        <CardBox key={info.step_desc} bottomLine={info.bottom_line?"dashed":"none"}>
-                            <IdxWords >
-                                <CardTitle show={info.step_desc}>{info.step_desc}</CardTitle>
+                        <CardBox key={info.step_desc} bottomLine={info.bottom_line?"dashed":"none"} phone={isMobile}>
+                            <IdxWords phone={isMobile}>
+                                <CardTitle show={info.step_desc} phone={isMobile}>{info.step_desc}</CardTitle>
                                     {info.step_content.map((content,key)=>{
                                             this.showIcon(content);
-                                            return <CardContent key={content.text}>{content.text}</CardContent>
+                                            return <CardContent key={content.text} phone={isMobile}>{content.text}</CardContent>
                                     })}
                             </IdxWords>
-                            <IdxImg src={images[`web${key+1}.png`]} width="auto" height="auto" alt="WebIdx"></IdxImg>
+                            <IdxImg src={isMobile?phone_img[`mobile${key+1}.png`]:images[`web${key+1}.png`]} width="auto" height="auto" alt="WebIdx" phone={isMobile}></IdxImg>
                         </CardBox> 
                     )
                 )}
