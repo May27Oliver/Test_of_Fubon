@@ -64,7 +64,6 @@ class topButtom extends Component {
         window.removeEventListener('scroll',this.onScroll);
     }
     onScroll=()=>{
-        alert('執行onScroll');
         if(window.scrollY > 200){
             this.setState({
                 showBtn:true
@@ -74,6 +73,7 @@ class topButtom extends Component {
                 showBtn:false
             })
         }
+        alert('button出現',this.state.showBtn);
     }
     toTheTop=()=>{
         window.scrollTo({
