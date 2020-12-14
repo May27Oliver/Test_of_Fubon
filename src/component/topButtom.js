@@ -15,7 +15,7 @@ const TopButton = styled.div`
         width:50px;
         height:50px;
         top:200px;
-        right:166px;
+        right:8px;
     }
 `
 const UpIcon = styled.div`
