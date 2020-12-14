@@ -33,7 +33,7 @@ const UpIcon = styled.div`
         background:#F5F4F4;
         @media (max-width: 500px) {
             top:22px;
-            right:21px;
+            right:21px; 
         }
     }
     &:after {
@@ -64,6 +64,7 @@ class topButtom extends Component {
         window.removeEventListener('scroll',this.onScroll);
     }
     onScroll=()=>{
+        alert('執行onScroll');
         if(window.scrollY > 200){
             this.setState({
                 showBtn:true
