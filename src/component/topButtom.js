@@ -14,8 +14,8 @@ const TopButton = styled.div`
     @media (max-width: 500px) {
         width:50px;
         height:50px;
-        top:677px;
-        right:8px;
+        top:0px;
+        right:0px;
     }
 `
 const UpIcon = styled.div`
@@ -68,10 +68,12 @@ class topButtom extends Component {
             this.setState({
                 showBtn:true
             })
+            document.getElementById('to-the-top').style.display="block";
         }else{
             this.setState({
                 showBtn:false
             })
+            document.getElementById('to-the-top').style.display="none";
         }
     }
     toTheTop=()=>{
@@ -83,7 +85,7 @@ class topButtom extends Component {
     render() {
         const {showBtn} = this.state;
         return (
-            <TopButton showBtn={showBtn} onClick={this.toTheTop}>
+            <TopButton id="to-the-top" showBtn={showBtn} onClick={this.toTheTop}>
                 <UpIcon></UpIcon>
             </TopButton>
         );
