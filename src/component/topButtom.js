@@ -73,7 +73,6 @@ class topButtom extends Component {
                 showBtn:false
             })
         }
-        alert('button出現',this.state.showBtn);
     }
     toTheTop=()=>{
         window.scrollTo({
