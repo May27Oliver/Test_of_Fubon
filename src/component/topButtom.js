@@ -14,7 +14,7 @@ const TopButton = styled.div`
     @media (max-width: 500px) {
         width:50px;
         height:50px;
-        top:200px;
+        top:80%;
         right:8px;
     }
 `
