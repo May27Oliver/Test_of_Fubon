@@ -208,7 +208,6 @@ class idxContent extends Component {
     }
     render() {
         const isMobile = window.screen.width < 500;
-        console.log(Card);
         const cards =isMobile ? Card.phone_pic : Card.pic_info; 
         const title = isMobile ? Card.phone_title : Card.web_title;
         
