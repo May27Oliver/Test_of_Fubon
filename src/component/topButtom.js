@@ -14,8 +14,8 @@ const TopButton = styled.div`
     @media (max-width: 500px) {
         width:50px;
         height:50px;
-        top:0px;
-        right:0px;
+        top:200px;
+        right:166px;
     }
 `
 const UpIcon = styled.div`
