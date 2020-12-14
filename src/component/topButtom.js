@@ -64,15 +64,12 @@ class topButtom extends Component {
         window.removeEventListener('scroll',this.onScroll);
     }
     onScroll=()=>{
-        alert('apple測試，有進onScroll')
         if(window.scrollY > 200){
             this.setState({
                 showBtn:true
             })
-            alert('apple測試，有進scroll>200')
             document.getElementById('to-the-top').style.display="block";
         }else{
-            alert('apple測試，有進scroll<=200')
             this.setState({
                 showBtn:false
             })
