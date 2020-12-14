@@ -65,6 +65,7 @@ class topButtom extends Component {
     }
     onScroll=()=>{
         if(window.scrollY > 200){
+            alert('有進來執行！')
             this.setState({
                 showBtn:true
             })
