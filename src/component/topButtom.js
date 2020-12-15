@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const TopButton = styled.div`
-    display:${props=>props.showBtn?'block':'none'};
+    // display:${props=>props.showBtn?'block':'none'};
+    display:block;
     transition:1s ease-out;
     width:59px;
     height:59px;
@@ -54,8 +55,11 @@ const UpIcon = styled.div`
 `
 
 class topButtom extends Component {
-    state={
-        showBtn:false//起始時回到上頭按鈕先隱藏
+    constructor(){
+        super();
+        this.state = {
+            showBtn:false//起始時回到上頭按鈕先隱藏
+        };
     }
     componentDidMount(){
         window.addEventListener('scroll',this.onScroll);
