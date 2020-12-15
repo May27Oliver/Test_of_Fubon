@@ -102,7 +102,7 @@ const CardTitle = styled.h4`
 
 const CardContent = styled.div`
     color:#505050;
-    width:90%;
+    width:95%;
     font-size:18px;
     font-weight:600;
     box-sizing: border-box;
