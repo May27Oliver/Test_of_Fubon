@@ -55,6 +55,12 @@ const BackHomePage = styled.span`
 `
 
 class header extends Component {
+    toTheTop=()=>{
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
     render() {
         const isMobile = window.screen.width < 500;
 
@@ -63,7 +69,7 @@ class header extends Component {
                 <HeaderLine></HeaderLine>
                 <Wrap phone={isMobile}>
                     <LogoImg src={logo} phone={isMobile} alt='logo'></LogoImg>
-                    <BackHome phone={isMobile}>
+                    <BackHome phone={isMobile} onClick={this.toTheTop}>
                         <img src={home} width="24.86" height="24.86" alt="home"/>
                         <BackHomePage phone={isMobile}>回首頁</BackHomePage>
                     </BackHome>
