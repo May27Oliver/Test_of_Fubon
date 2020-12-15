@@ -21,6 +21,12 @@ const Wrap = styled.div`
     display:flex;
     justify-content:${props=>props.phone?'center':'space-between'};
     align-items:center;
+    @media (max-width: 900px) {
+        width:90%;
+    }
+    @media (max-width: 500px) {
+        width:100%;
+    }
 `
 const HeaderLine = styled.div`
     width:100%;
