@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/test_of_fubon/static/css/main.7bed859e.chunk.css",
-    "main.js": "/test_of_fubon/static/js/main.9634c1bb.chunk.js",
-    "main.js.map": "/test_of_fubon/static/js/main.9634c1bb.chunk.js.map",
+    "main.js": "/test_of_fubon/static/js/main.c89c019d.chunk.js",
+    "main.js.map": "/test_of_fubon/static/js/main.c89c019d.chunk.js.map",
     "runtime-main.js": "/test_of_fubon/static/js/runtime-main.bba57d77.js",
     "runtime-main.js.map": "/test_of_fubon/static/js/runtime-main.bba57d77.js.map",
     "static/js/2.5e8f66e2.chunk.js": "/test_of_fubon/static/js/2.5e8f66e2.chunk.js",
     "static/js/2.5e8f66e2.chunk.js.map": "/test_of_fubon/static/js/2.5e8f66e2.chunk.js.map",
     "index.html": "/test_of_fubon/index.html",
-    "precache-manifest.65eeecf075060679b1fb5f15065b8a94.js": "/test_of_fubon/precache-manifest.65eeecf075060679b1fb5f15065b8a94.js",
+    "precache-manifest.8cae1245a101eed96da6942e8ba9b782.js": "/test_of_fubon/precache-manifest.8cae1245a101eed96da6942e8ba9b782.js",
     "service-worker.js": "/test_of_fubon/service-worker.js",
     "static/css/main.7bed859e.chunk.css.map": "/test_of_fubon/static/css/main.7bed859e.chunk.css.map",
     "static/js/2.5e8f66e2.chunk.js.LICENSE.txt": "/test_of_fubon/static/js/2.5e8f66e2.chunk.js.LICENSE.txt",
@@ -49,6 +49,6 @@
     "static/js/runtime-main.bba57d77.js",
     "static/js/2.5e8f66e2.chunk.js",
     "static/css/main.7bed859e.chunk.css",
-    "static/js/main.9634c1bb.chunk.js"
+    "static/js/main.c89c019d.chunk.js"
   ]
 }
