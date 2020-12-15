@@ -10,8 +10,10 @@ const TopButton = styled.div`
     background:#00829B50;
     border-radius:50%;
     position:fixed;
-    top:730px;
-    right:53px;
+    // top:730px;
+    // right:53px;
+    top:100px;
+    right:100px;
     @media (max-width: 500px) {
         width:50px;
         height:50px;
