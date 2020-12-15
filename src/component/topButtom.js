@@ -2,23 +2,20 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 const TopButton = styled.div`
-    // display:${props=>props.showBtn?'block':'none'};
-    display:block;
+    display:${props=>props.showBtn?'block':'none'};
     transition:1s ease-out;
     width:59px;
     height:59px;
     background:#00829B50;
     border-radius:50%;
     position:fixed;
-    // top:730px;
-    // right:53px;
-    top:80%;
-    right:100px;
+    top:86.1%;
+    right:2.7%;
     @media (max-width: 500px) {
         width:50px;
         height:50px;
         top:80%;
-        right:8px;
+        right:1.9%;
     }
 `
 const UpIcon = styled.div`
