@@ -96,13 +96,13 @@ const CardTitle = styled.h4`
         position:absolute;
         z-index:1;
         top:5px;
-        left:8.5px;
+        left:16px;
     }
 `
 
 const CardContent = styled.div`
     color:#505050;
-    width:85%;
+    width:90%;
     font-size:18px;
     font-weight:600;
     box-sizing: border-box;
@@ -119,14 +119,14 @@ const IconImg = styled.img`
 `
 const Seq = styled.span`
     position:relative;
-    margin:0 5px 0 0;
+    margin:0 15px 0 0;
     &:before {
         content:'${props=> props.no}';
         display:inline-block;
         position:absolute;
         z-index:1;
         top:0;
-        left:-38px;
+        left:-30px;
         width:37px;
         height:19px;
         background:#F55A08;
