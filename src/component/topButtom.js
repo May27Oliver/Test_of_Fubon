@@ -12,7 +12,7 @@ const TopButton = styled.div`
     position:fixed;
     // top:730px;
     // right:53px;
-    top:100px;
+    top:80%;
     right:100px;
     @media (max-width: 500px) {
         width:50px;
