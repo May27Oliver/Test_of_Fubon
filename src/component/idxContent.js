@@ -104,7 +104,7 @@ const CardContent = styled.div`
     color:#505050;
     width:95%;
     font-size:18px;
-    font-weight:600;
+    font-weight:500;
     box-sizing: border-box;
     padding:0 0 0 45px;
     letter-spacing:1px;
